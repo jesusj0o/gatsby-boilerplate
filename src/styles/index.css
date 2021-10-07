@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@500&family=Glory:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply font-serif;
+  }
+  h1 {
+    @apply font-mono text-5xl text-violet-600 my-6;
+  }
+  h2 {
+    @apply font-mono text-4xl text-violet-500 my-4;
+  }
+  h3 {
+    @apply font-mono text-3xl text-violet-300 my-2;
+  }
+  h4{
+    @apply font-mono text-2xl text-violet-200 my-2;
+  }
+  h5{
+    @apply font-mono text-base text-violet-200 my-2;
+  }
+}
+
+
+.special-display {
+  @apply font-display text-5xl text-violet-500;
+}
+.special-display:first-letter {
+  @apply font-display
+    text-7xl
+    bg-clip-text
+    text-opacity-0
+    text-violet-500
+    bg-gradient-to-b
+    from-violet-900
+    to-violet-400;
+}
+
+.m-link {
+  @apply text-blue-300 hover:text-blue-500;
+}
+
+.gatsby-code-button-container {
+  touch-action: none;
+  display: flex;
+  justify: flex-end;
+  position: relative;
+  top: 28px;
+  right: 3px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.gatsby-code-button-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: gray;
+}
+
+pre {
+  margin: 0 !important;
+}
+
+.gatsby-remark-code-title {
+  margin-bottom: -1rem;
+  padding: 0.5em 0.5em 0.2em 0.5em;
+
+  @apply font-serif text-red-400 text-sm ml-4;
+
+}
+
+.markdown-pages h1 {
+  @apply font-mono text-4xl text-pink-700;
+}
+.markdown-pages h1:first-letter {
+  @apply font-mono text-4xl text-pink-700;
+}
+.markdown-pages h2 {
+  @apply font-mono text-3xl text-pink-600 ml-8;
+}
+.markdown-pages h3 {
+  @apply font-mono text-2xl text-pink-500 ml-16;
+}
+
+.markdown-pages h4 {
+  @apply font-mono text-base text-pink-400 ml-24;
+}
+
+.markdown-pages h5 {
+  @apply font-mono text-base text-pink-200 ml-32;
+}
+
+.markdown-pages h6 {
+  @apply font-mono text-sm text-pink-100 ml-32;
+}
+
+.markdown-pages h2,h3 {
+  @apply mt-8 mb-4;
+}
+.markdown-pages h4,h5,h6 {
+  @apply mt-6 mb-3;
+}
+
+.markdown-pages p {
+  @apply mb-2;
+}
+
+.markdown-pages .markdown-pages-toc-title {
+  @apply mx-0;
+}
